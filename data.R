@@ -29,7 +29,7 @@ retrieve_data <- function(){
       i <- i + 1000
     }
   }
-  saveRDS(features, "raw_data/pc4_list_data")
+  saveRDS(features, "raw_data/pc4_list_data.Rds")
   saveRDS(features %>% list_rbind(), "data/pc4_data.Rds")
 }
 
